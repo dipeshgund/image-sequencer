@@ -32,7 +32,9 @@ module.exports = {
   'grid-overlay': require('./modules/GridOverlay'),
   'import-image': require('./modules/ImportImage'),
   'minify-image': require('./modules/MinifyImage'),
-  // 'invert': require('image-sequencer-invert'),
+  // 'invert': require('image-sequencer-invert')
+  // The invert module takes options as parameter. Draw function is called on every pixel.
+  //Draw function calls changePixel which inverts every pixel by subtracting its value from 255. Manipulated picture is returned
   'invert': require('./modules/Invert'),
   'ndvi': require('./modules/Ndvi'),
   'ndvi-colormap': require('./modules/NdviColormap'),
